@@ -39,40 +39,40 @@
     <!--/*<header>*/-->
     <header class="bg-gray-200 relative">
         <span class="absolute bg-white h-full right-0 top-0 w-1/2"></span>
-        <div class="container items-center flex justify-between mx-auto w-full relative z-1">
+        <div class="container px-4 items-center flex justify-between mx-auto w-full relative z-1">
             <span class="-skew-x-24 absolute bg-white h-full left-0 top-0 transform w-full"></span>
             <div class="logo relative py-1 px-4 z-1">
-                <img src="assets/images/logo.png" class="h-12 relative z-1" alt="">
+                <img src="assets/images/logo.png" class="lg:h-12 h-8 relative z-1" alt="">
             </div>
-            <div class="nav z-1">
-                <ul class="flex">
+            <div class="nav shadow-2xl transition-all duration-200 md:relative fixed md:w-auto top-0 left-0 w-64 z-1 md:h-auto h-full md:bg-transparent bg-white">
+                <ul class="flex md:flex-row flex-col">
                     <li class="active relative">
-                        <a href="" class="flex px-6 py-5 relative hover:text-white z-1">Home</a>
+                        <a href="" class="flex lg:px-6 px-4 lg:py-5 py-4 relative hover:text-white z-1 border-b border-solid border-gray-200 md:border-0">Home</a>
+                        <span class="-skew-x-24 md:block hidden absolute bg-pink-800 h-full left-0 top-0 transform w-full opacity-0"></span>
+                    </li>
+                    <li class="relative">
+                        <a href="" class="flex lg:px-6 px-4 lg:py-5 py-4 relative hover:text-white z-1 border-b border-solid border-gray-200 md:border-0">About Us</a>
                         <span class="-skew-x-24 absolute bg-pink-800 h-full left-0 top-0 transform w-full opacity-0"></span>
                     </li>
                     <li class="relative">
-                        <a href="" class="flex px-6 py-5 relative hover:text-white z-1">About Us</a>
+                        <a href="" class="flex lg:px-6 px-4 lg:py-5 py-4 relative hover:text-white z-1 border-b border-solid border-gray-200 md:border-0">Projects</a>
                         <span class="-skew-x-24 absolute bg-pink-800 h-full left-0 top-0 transform w-full opacity-0"></span>
                     </li>
                     <li class="relative">
-                        <a href="" class="flex px-6 py-5 relative hover:text-white z-1">Projects</a>
+                        <a href="" class="flex lg:px-6 px-4 lg:py-5 py-4 relative hover:text-white z-1 border-b border-solid border-gray-200 md:border-0">Collaborate</a>
                         <span class="-skew-x-24 absolute bg-pink-800 h-full left-0 top-0 transform w-full opacity-0"></span>
                     </li>
                     <li class="relative">
-                        <a href="" class="flex px-6 py-5 relative hover:text-white z-1">Collaborate</a>
+                        <a href="" class="flex lg:px-6 px-4 lg:py-5 py-4 relative hover:text-white z-1 border-b border-solid border-gray-200 md:border-0">Future</a>
                         <span class="-skew-x-24 absolute bg-pink-800 h-full left-0 top-0 transform w-full opacity-0"></span>
                     </li>
                     <li class="relative">
-                        <a href="" class="flex px-6 py-5 relative hover:text-white z-1">Future</a>
-                        <span class="-skew-x-24 absolute bg-pink-800 h-full left-0 top-0 transform w-full opacity-0"></span>
-                    </li>
-                    <li class="relative">
-                        <a href="" class="flex px-6 py-5 relative hover:text-white z-1">Contact us</a>
+                        <a href="" class="flex lg:px-6 px-4 lg:py-5 py-4 relative hover:text-white z-1 border-b border-solid border-gray-200 md:border-0">Contact us</a>
                         <span class="-skew-x-24 absolute bg-pink-800 h-full left-0 top-0 transform w-full opacity-0"></span>
                     </li>
                 </ul>
             </div>
-            <div class="flex flex-col hambargar w-10 z-1 cursor-pointer md:hidden">
+            <div class="flex flex-col hamburgar w-8 z-1 cursor-pointer md:hidden">
                 <span class="bg-black h-1 rounded-l w-full"></span>
                 <span class="bg-black h-1 my-1 rounded-l w-full"></span>
                 <span class="bg-black h-1 rounded-l w-full"></span>
@@ -81,25 +81,132 @@
     </header>
     <!--/*</header>*/-->
     <section class="home">
-        <div class="container mx-auto w-full">
-            <div class="grid grid-cols-4 gap-4">
-                <div class="lg:col-span-1 col-span-4">
-                    fdfsdfsdfsdfdsfdsfsdfwrwerwerczdfr tertrwter t ert ewrtwrtwe rtwet wertw
+        <article class="banner z-1 relative">
+            <div class="bannerSlider">
+                <div class="bannerSliderItem relative">
+                    <div class="bannerSliderImg md:mb-5 ">
+                        <img src="assets/images/banner.jpg" alt="">
+                    </div>
+                    <div class="sliderContSection md:absolute relative pr-10 left-0 bottom-0">
+                        <div class="relative pl-10 pt-5 md:pb-12 pb-5 z-1 bg-white">
+                            <div class="h3 text-2xl mb-2 text-black">Our core foundation has been to innovate and do more than just create. </div>
+                            <div class="cont text-base leading-5 text-gray-600 mb-3">We are more than a real estate company. Our hybrid business model allows us to function as a combination of a real estate development firm, a think tank of IT solutions and innovative cloud kitchen setups or Ghost Kitchens.
+                                In short, we aim to address the gap between real estate, architecture, IT and engineering. </div>
+                            <a href="" class="inline-block uppercase btn px-4 py-2 bg-black text-white ">more ></a>
+                        </div>
+                        <span class="md:block hidden -skew-x-12 absolute bg-white h-full left-0 top-0 transform w-full "></span>
+                    </div>
                 </div>
-                <div class="lg:col-span-3 col-span-4">
+                <div class="bannerSliderItem relative">
+                    <div class="bannerSliderImg md:mb-5 ">
+                        <img src="assets/images/banner.jpg " alt=" ">
+                    </div>
+
+                    <div class="sliderContSection md:absolute relative pr-10 left-0 bottom-0">
+                        <div class="relative pl-10 pt-5 md:pb-12 pb-5 z-1 bg-white">
+                            <div class="h3 text-2xl mb-2 text-black">Our core foundation has been to innovate and do more than just create. </div>
+                            <div class="cont text-base leading-5 text-gray-600 mb-3">We are more than a real estate company. Our hybrid business model allows us to function as a combination of a real estate development firm, a think tank of IT solutions and innovative cloud kitchen setups or Ghost Kitchens.
+                                In short, we aim to address the gap between real estate, architecture, IT and engineering. </div>
+                            <a href="" class="inline-block uppercase btn px-4 py-2 bg-black text-white ">more ></a>
+                        </div>
+                        <span class="md:block hidden -skew-x-12 absolute bg-white h-full left-0 top-0 transform w-full "></span>
+                    </div>
+                </div>
+                <div class="bannerSliderItem relative">
+                    <div class="bannerSliderImg md:mb-5 ">
+                        <img src="assets/images/banner.jpg " alt=" ">
+                    </div>
+
+                    <div class="sliderContSection md:absolute relative pr-10 left-0 bottom-0">
+                        <div class="relative pl-10 pt-5 md:pb-12 pb-5 z-1 bg-white">
+                            <div class="h3 text-2xl mb-2 text-black">Our core foundation has been to innovate and do more than just create. </div>
+                            <div class="cont text-base leading-5 text-gray-600 mb-3">We are more than a real estate company. Our hybrid business model allows us to function as a combination of a real estate development firm, a think tank of IT solutions and innovative cloud kitchen setups or Ghost Kitchens.
+                                In short, we aim to address the gap between real estate, architecture, IT and engineering. </div>
+                            <a href="" class="inline-block uppercase btn px-4 py-2 bg-black text-white ">more ></a>
+                        </div>
+                        <span class="md:block hidden -skew-x-12 absolute bg-white h-full left-0 top-0 transform w-full "></span>
+                    </div>
+                </div>
+            </div>
+        </article>
+        <article class="sec-2 md:-mt-6 md:py-24 py-8">
+            <div class="grid md:grid-cols-3 grid-cols-1 gap-4 lg:w-3/5 md:w-4/5 sm:w-5/6 w-9/12 mx-auto">
+                <div class="bg-white p-4">
+                    <div class=""></div>
+                    <div class="uppercase text-center mb-8">ARCHITECTURAL PROJECTS </div>
+                    <div class="leading-5">We keep the customers at the heart of everything we do. Our past experience as architects and civil engineers gives us a better understanding as to what the customer desires in terms of luxury and comfort.</div>
+                </div>
+                <div class="bg-white p-4">
+                    <div class=""></div>
+                    <div class="uppercase text-center mb-8">technology solutions </div>
+                    <div class="leading-5">We are always ready to adopt new-age designs, business models and remain flexible to absorb various cultural and technological shifts instead of just keeping up with the world.</div>
+                </div>
+                <div class="bg-white p-4">
+                    <div class=""></div>
+                    <div class="uppercase text-center mb-8">cloud kitchen</div>
+                    <div class="leading-5">Introducing commercial facilities which is purpose-built to produce food specifically for delivery. It is known by quite a few names – commissary kitchen, ghost kitchens or virtual kitchens. It offers certain advantages over offering
+                        delivery from a traditional brick-and-mortar restaurant.</div>
+                </div>
+            </div>
+        </article>
+        <article class="sec-3 md:py-12 py-8">
+            <div class="grid md:grid-cols-4 grid-cols-1 gap-4 mx-auto md:w-10/12">
+                <div class="col-span-1 lg:pr-6">
+                    <div class=""><img src="assets/images/six.png" alt=""></div>
+                </div>
+                <div class="col-span-3">
+                    <div class="grid grid-cols-3 grid-rows-3 gap-6 ">
+                        <div class="lg:col-span-1 col-span-4 ">
+                            <div class=""><img src="assets/images/six-1.png" alt=""></div>
+                            <div class="pt-4 text-black text-lg">Eco-friendly construction materials that keep the home cool</div>
+                        </div>
+                        <div class="lg:col-span-1 col-span-4 ">
+                            <div class=""><img src="assets/images/six-1.png" alt=""></div>
+                            <div class="pt-4 text-black text-lg">Eco-friendly construction materials that keep the home cool</div>
+                        </div>
+                        <div class="lg:col-span-1 col-span-4 ">
+                            <div class=""><img src="assets/images/six-1.png" alt=""></div>
+                            <div class="pt-4 text-black text-lg">Eco-friendly construction materials that keep the home cool</div>
+                        </div>
+                        <div class="lg:col-span-1 col-span-4 ">
+                            <div class=""><img src="assets/images/six-1.png" alt=""></div>
+                            <div class="pt-4 text-black text-lg">Eco-friendly construction materials that keep the home cool</div>
+                        </div>
+                        <div class="lg:col-span-1 col-span-4 ">
+                            <div class=""><img src="assets/images/six-1.png" alt=""></div>
+                            <div class="pt-4 text-black text-lg">Eco-friendly construction materials that keep the home cool</div>
+                        </div>
+                        <div class="lg:col-span-1 col-span-4 ">
+                            <div class=""><img src="assets/images/six-1.png" alt=""></div>
+                            <div class="pt-4 text-black text-lg">Eco-friendly construction materials that keep the home cool</div>
+                        </div>
+                        <div class="lg:col-span-3 col-span-4 ">
+                            <a href="" class="inline-block uppercase btn px-4 py-2 bg-black text-white ">more ></a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </article>
+        <!-- <div class="container mx-auto w-full ">
+            <div class="grid grid-cols-4 gap-4 ">
+                <div class="lg:col-span-1 col-span-4 ">
+                    <div class=""></div>
+                </div>
+                <div class="lg:col-span-3 col-span-4 ">
                     fdfsdfsdfsdfdsfdsfsdfwrwerwerczdfr tertrwter t ert ewrtwrtwe rtwet wertwfdfsdfsdfsdfdsfdsfsdfwrwerwerczdfr tertrwter t ert ewrtwrtwe rtwet wertwfdfsdfsdfsdfdsfdsfsdfwrwerwerczdfr tertrwter t ert ewrtwrtwe rtwet wertwfdfsdfsdfsdfdsfdsfsdfwrwerwerczdfr
                     tertrwter t ert ewrtwrtwe rtwet wertwfdfsdfsdfsdfdsfdsfsdfwrwerwerczdfr tertrwter t ert ewrtwrtwe rtwet wertwfdfsdfsdfsdfdsfdsfsdfwrwerwerczdfr tertrwter t ert ewrtwrtwe rtwet wertw
                 </div>
             </div>
-        </div>
+        </div> -->
     </section>
 
     <!--/*<footer>*/-->
     <footer>
     </footer>
     <!--/*<footer>*/-->
-    <script src="assets/js/slick.js"></script>
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/slick.js "></script>
+    <script src="assets/js/script.js "></script>
 </body>
 
 </html>

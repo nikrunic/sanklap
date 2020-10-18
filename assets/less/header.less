@@ -1,12 +1,37 @@
 header{
+    overflow: hidden;
     .nav{
+        
+        @media (max-width:767px) {
+            left: -300px;
+            &.open{
+                left: 0;
+            }
+        }
         li{
             &:hover, &.active{
-                a{color: #fff;}
+                a{
+                    color: #fff;
+                    @media (max-width:767px) {
+                        background-color: var(--primary);
+                    }
+                }
                 span{
                     opacity: 1;
+                    @media (max-width:767px) {
+                        display: none;
+                    }
                 }
             }
+        }
+    }
+    .hamburgar.open{
+        height: 30px;
+        span{
+            transform-origin: center; top: 10px; position: relative;height: 3px;
+            &:first-child{transform: rotate(45deg);  top: 13px; left: 0px;}
+            &:nth-child(2){display: none;}
+            &:last-child{transform: rotate(-45deg);}
         }
     }
 }

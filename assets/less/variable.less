@@ -1,9 +1,19 @@
 @primary: #943645;
 @base-font:1rem;
-@font-cabin: 'Cabin', sans-serif;
-@font-roboto: 'Roboto', sans-serif;
+@font-family: 'aileronregular';
 :root{
     --primary:@primary;
-    --font-cabin: 'Cabin', sans-serif;
-    --font-roboto: 'Roboto', sans-serif;
+    --font-family: 'aileronregular';
+}
+@font-face {
+    font-family: 'aileronregular';
+    src: url('../fonts/Aileron-Regular-webfont.eot');
+    src: url('../fonts/Aileron-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+        //  url('../fonts/Aileron-Regular-webfont.woff2') format('woff2'),
+         url('../fonts/Aileron-Regular-webfont.woff') format('woff'),
+         url('../fonts/Aileron-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/Aileron-Regular-webfont.svg#aileronregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }

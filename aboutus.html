@@ -47,20 +47,28 @@
             <div class="logo relative py-1 px-4 z-1">
                 <a href="index.html"><img src="assets/images/logo.png" class="lg:h-12 h-8 relative z-1" alt="Logo"></a>
             </div>
-            <div class="nav shadow-2xl transition-all duration-200 md:relative fixed md:w-auto top-0 left-0 w-64 z-1 md:h-auto h-full md:bg-transparent bg-white">
+            <div class="nav shadow-2xl md:shadow-none transition-all duration-200 md:relative fixed md:w-auto top-0 left-0 w-64 z-1 md:h-auto h-full md:bg-transparent bg-white">
                 <ul class="flex md:flex-row flex-col">
-                    <li class="active relative">
+                    <li class="relative">
                         <a href="index.html" class="flex lg:px-6 px-4 lg:py-5 py-4 relative hover:text-white z-1 border-b border-solid border-gray-200 md:border-0">Home</a>
                         <span class="-skew-x-24 md:block hidden absolute bg-pink-800 h-full left-0 top-0 transform w-full opacity-0"></span>
                     </li>
-                    <li class="relative">
+                    <li class="active relative">
                         <a href="aboutus.html" class="flex lg:px-6 px-4 lg:py-5 py-4 relative hover:text-white z-1 border-b border-solid border-gray-200 md:border-0">About
                                 Us</a>
                         <span class="-skew-x-24 absolute bg-pink-800 h-full left-0 top-0 transform w-full opacity-0"></span>
                     </li>
                     <li class="relative">
-                        <a href="Projects.html" class="flex lg:px-6 px-4 lg:py-5 py-4 relative hover:text-white z-1 border-b border-solid border-gray-200 md:border-0">Projects</a>
+                        <a href="Projects.html" class="flex lg:px-6 px-4 lg:py-5 py-4 relative hover:text-white z-1 border-b border-solid border-gray-200 md:border-0">Projects
+                            
+                        </a>
                         <span class="-skew-x-24 absolute bg-pink-800 h-full left-0 top-0 transform w-full opacity-0"></span>
+                        <ul class="sub-menu">
+                            <li><a href="">Architectural projects</a></li>
+                            <li><a href="">Information Technology</a></li>
+                            <li><a href="">Cloud Kitchen</a></li>
+                        </ul>
+                       
                     </li>
                     <li class="relative">
                         <a href="collaborate.html" class="flex lg:px-6 px-4 lg:py-5 py-4 relative hover:text-white z-1 border-b border-solid border-gray-200 md:border-0">Collaborate</a>
@@ -72,7 +80,7 @@
                     </li>
                     <li class="relative">
                         <a href="contact.html" class="flex lg:px-6 px-4 lg:py-5 py-4 relative hover:text-white z-1 border-b border-solid border-gray-200 md:border-0">Contact
-                                us</a>
+                                Us</a>
                         <span class="-skew-x-24 absolute bg-pink-800 h-full left-0 top-0 transform w-full opacity-0"></span>
                     </li>
                 </ul>
@@ -94,9 +102,9 @@
                     <div class="aboutImg">
                         <img src="assets/images/about.jpg" alt="">
                     </div>
-                    <div class="aboutText pl-6 -mt-16">
-                        <h2 class="text-5xl leading-10 mb-2">About Us</h2>
-                        <h4 class="text-2xl">Our core foundation has been to innovate and do more than just create.
+                    <div class="aboutText pl-6 lg:-mt-16 md:-mt-8 md:-mt-12">
+                        <h2 class="xl:text-5xl lg:text-4xl md:text-3xl text-2xl xl:leading-10 leading-none mb-2">About Us</h2>
+                        <h4 class="md:text-2xl sm:text-xl text-lg">Our core foundation has been to innovate and do more than just create.
                         </h4>
                         <p class="text-base">We are more than a real estate company. Our hybrid business model allows us to function as a combination of a real estate development firm, a think tank of IT solutions and innovative cloud kitchen setups aka. Ghost Kitchens. In
                             short, we aim to address the gap between real estate, architecture, IT and engineering.
@@ -114,18 +122,18 @@
 
         <article class="sec-2 relative overflow-hidden z-1">
             <div class="container mx-auto lg:pb-24 md:pb-12 pb-10">
-                <div class="text-5xl leading-10 mb-2 text-center">Our Founders</div>
+                <div class="xl:text-5xl lg:text-4xl md:text-3xl text-2xl xl:leading-10 leading-none mb-2 text-center">Our Founders</div>
                 <div class="flex founderDetails">
-                    <div class="w-1/2 pr-10">
+                    <div class="lg:w-1/2 lg:pr-10 lg:mb-0 mb-6">
                         <div class="flex justify-center pb-4">
-                            <div class=""><img class="h-16 w-16 md:h-24 md:w-24 rounded-full mx-auto md:mx-0" src="assets/images/suhhas-sankpal-chairman-about.jpg"></div>
+                            <div class="w-40 h-40 mx-auto"><img class="" src="assets/images/suhhas-sankpal-chairman-about.jpg"></div>
                         </div>
                         <div class="name">Mr. Suhhas Sankpal, Chairman.</div>
                         <p>A Civil Engineer by profession and Founder and Chairman of Sankpal Group. He is a first-generation entrepreneur and the main driving force behind the group success.</p>
                     </div>
-                    <div class="w-1/2 pl-10">
+                    <div class="lg:w-1/2 lg:pl-10 lg:mb-0 mb-6">
                         <div class="flex justify-center pb-4">
-                            <div class=""><img class="h-16 w-16 md:h-24 md:w-24 rounded-full mx-auto md:mx-0" src="assets/images//dhrutii-sankpal-vice-chairman-about.jpg"></div>
+                            <div class="w-40 h-40 mx-auto"><img class="" src="assets/images//dhrutii-sankpal-vice-chairman-about.jpg"></div>
                         </div>
                         <div class="name">Mrs. Dhrutii Sankpal, Vice-Chairman.</div>
                         <p>A Master Architect and Interior Designer by profession, she is the creative driving force of the group. Her creative expertise has always added strategic value to all our projects.</p>
@@ -134,12 +142,15 @@
             </div>
         </article>
 
-        <article class="sec-3 md:pt-12 md:pb-6  relative overflow-hidden z-1">
-            <div class="w-full bg-4 lg:py-24 md:py-12 py-10">
-                <div class="flex flex-col lg:ml-auto lg:mr-20 text-white lg:w-2/6 w-fill mx-auto w-5/6">
-                    <div class="text-3xl sm:text-4xl md:text-5xl xl:text-6xl leading-none mb-2">People at <br class="lg:inline-block hidden">Sankpal</div>
-                    <div class=" text-lg">We're a team of creative thinkers sharing a passion for design and compassion for our communities. </div>
-                    <div class="text-center"><a href="" class="inline-block uppercase btn px-4 py-2 bg-white text-black mt-5">more ></a></div>
+        <article class="sec-3 md:pt-12 md:pb-6 relative overflow-hidden z-1">
+            <div class="w-full bg-6 lg:py-24 md:py-12 py-10">
+                <div class="flex flex-col lg:ml-auto lg:mr-20 xl:mr-38 text-right text-white lg:w-2/6 w-fill mx-auto w-5/6">
+                    <div class="text-3xl sm:text-4xl md:text-5xl xl:text-6xl leading-none mb-2">People</div>
+                    <div class="md:text-3xl text-2xl">Driving a passion for design and compassion for our communities.</div>
+                    <div class=" text-lg">We have a self-motivated management team in place with ample 
+                        years of experience in the reality sector. They ensure that every 
+                        project built not just meets and maintains the quality and 
+                        design standards but is also in par with international standards. </div>
 
                 </div>
             </div>
@@ -168,10 +179,11 @@
     <div class="w-full bg-cover bg-center" style="height:31rem; background-image: url(assets/images/About-second-footerbanner.jpg);">
         <div class="flex items-center justify-center h-full w-full bg-gray-900 bg-opacity-50">
             <div class="w-2/4">
-                <h1 class="text-white text-2xl font-semibold uppercase md:text-3xl">Vision</h1>
-                <p class="text-white">We create spaces with meaning. </p>
-                <p class="text-white">We envision to not just develop spaces but also understand the need to cherish the environment, take only what is needed and preserve the rest for coming generations. Our aim is to be a realty major that plays a vital role in providing
-                    unparalleled living experience and create neo-modern living spaces.
+                <h1 class="text-white text-3xl md:text-6xl">Vision</h1>
+                <p class="text-white text-3xl mb-3">We create spaces with meaning. </p>
+                <p class="text-white mb-3">We envision to not just develop spaces but also understand the need to cherish the environment, take only what is needed and preserve the rest for coming generations. 
+                    </p>
+                <p class="text-white">Our aim is to be a realty major that plays a vital role in providing unparalleled living experience and create neo-modern living spaces.
                 </p>
             </div>
         </div>
@@ -183,12 +195,7 @@
                 215 Atrium Building, A-705, Andheri-Kurla Road, <br>Andheri East, Mumbai, Maharashtra 400093 <br>T: 022 4967 0913 /14 /15 /16 | E: reception@sankpalglobal.com
             </div>
             <div class="flex items-center">
-                <div class="social-1 px-3"><img src="assets/images/fb.png" alt=""></div>
-                <div class="social-1 px-3"><img src="assets/images/twt.png" alt=""></div>
-                <div class="font-bold text-3xl px-2">2020</div>
-                <div class="footLogo pl-3">
-                    <img src="assets/images/footlogo.png" alt="" class="">
-                </div>
+                <div class="px-2">&copy; Designed by PaperPixel 2020</div>
             </div>
         </div>
     </footer>

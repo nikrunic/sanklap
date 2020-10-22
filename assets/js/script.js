@@ -13,6 +13,15 @@ $(function() {
         arrows: false
     });
 
+		$(".tab_title_inner_blk li").on("click", function(e) {
+			changeTab($(this));
+		});
+		
+		if(window.location.hash)
+		{
+			var hash = window.location.hash;
+			$(".tab_title_inner_blk li span a[href='"+hash+"']").parents("li").click();
+		}
 });
 
 $(window).resize(function() {});
@@ -104,3 +113,13 @@ function initMap() {
       ],
     });
   }
+
+  function changeTab(el)
+	{
+		el.parents(".tab_blk").find(".tab_title_inner_blk li").removeClass("active");
+		el.addClass("active");
+		var index = el.parents(".tab_blk").find(".tab_title_inner_blk li").index(el);
+		el.parents(".tab_blk").find(".tab_cont_li").removeClass("active").eq(index).addClass("active");
+		console.log(index);
+	}
+ 

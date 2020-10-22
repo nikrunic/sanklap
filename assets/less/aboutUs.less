@@ -1,5 +1,10 @@
 .aboutUs{
     .aboutUsSec{
+        @media(max-width:767px){
+            flex-direction: column;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
         .aboutImg{
             width: 300px;
             height: 300px;
@@ -7,16 +12,33 @@
             align-items: center;
             justify-content: center;
             overflow: hidden;
+            @media(max-width:767px){
+                width: 100%;
+                height: auto;
+            }
             img{
                 height: 100%;
+                @media(max-width:767px){
+                    height: auto;
+                }
             }
         }
         .aboutText{
             width: calc(100% - 300px);
+            @media(max-width:767px){
+                width: 100%;
+                margin-top: 20px;
+                padding-left: 0;
+            }
         }
     }
     .sec-2{
         .founderDetails{
+            @media (max-width:1024px) {
+                flex-direction: column;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
             .name{
                 color: #130d63;
                 margin-bottom: 15px;
@@ -26,17 +48,17 @@
     }
     .sec-3 {
         
-        @media (min-width:1023px) {
+        @media (min-width:1024px) {
             margin-top: -3rem;
         }
-        @media (max-width:1023px) {
+        @media (max-width:1024px) {
             padding: 0;
         }
         .sec-3-Img_blk {
 
             overflow: hidden;
 
-            @media (min-width:1023px) {
+            @media (min-width:1024px) {
                 position: absolute;
                 display: block;
                 height: 100%;
@@ -48,7 +70,7 @@
             }
 
             .sec-3-Img {
-                @media (min-width:1023px) {
+                @media (min-width:1024px) {
                     top: 0;
                     right: -16%;
                     --transform-skew-x: 12deg;

@@ -28,9 +28,15 @@
 
     <link type="text/css" href="assets/css/tailwind.min.css" rel="stylesheet">
     <link type="text/css" href="assets/css/slick.css" rel="stylesheet">
-    <link type="text/css" href="assets/css/style.css" rel="stylesheet">
+    <link type="text/css" href="assets/css/style.css" rel="stylesheet">    
+    <link type="text/css" href="assets/css/fresco.css" rel="stylesheet">
+
+
     <!--js file  start -->
-    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <!-- <script src="assets/js/jquery-3.5.1.min.js"></script> -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/fresco.js"></script>
+
     <!--js file  end -->
 
 </head>
@@ -46,7 +52,7 @@
             </div>
             <div class="nav shadow-2xl transition-all duration-200 md:relative fixed md:w-auto top-0 left-0 w-64 z-1 md:h-auto h-full md:bg-transparent bg-white">
                 <ul class="flex md:flex-row flex-col">
-                    <li class="active relative">
+                    <li class=" relative">
                         <a href="" class="flex lg:px-6 px-4 lg:py-5 py-4 relative hover:text-white z-1 border-b border-solid border-gray-200 md:border-0">Home</a>
                         <span class="-skew-x-24 md:block hidden absolute bg-pink-800 h-full left-0 top-0 transform w-full opacity-0"></span>
                     </li>
@@ -54,7 +60,7 @@
                         <a href="" class="flex lg:px-6 px-4 lg:py-5 py-4 relative hover:text-white z-1 border-b border-solid border-gray-200 md:border-0">About Us</a>
                         <span class="-skew-x-24 absolute bg-pink-800 h-full left-0 top-0 transform w-full opacity-0"></span>
                     </li>
-                    <li class="relative">
+                    <li class="active relative">
                         <a href="" class="flex lg:px-6 px-4 lg:py-5 py-4 relative hover:text-white z-1 border-b border-solid border-gray-200 md:border-0">Projects</a>
                         <span class="-skew-x-24 absolute bg-pink-800 h-full left-0 top-0 transform w-full opacity-0"></span>
                     </li>
@@ -67,7 +73,7 @@
                         <span class="-skew-x-24 absolute bg-pink-800 h-full left-0 top-0 transform w-full opacity-0"></span>
                     </li>
                     <li class="relative">
-                        <a href="" class="flex lg:px-6 px-4 lg:py-5 py-4 relative hover:text-white z-1 border-b border-solid border-gray-200 md:border-0">Contact us</a>
+                        <a href="" class="flex lg:px-6 px-4 lg:py-5 py-4 relative hover:text-white z-1 border-b border-solid border-gray-200 md:border-0">Contact Us</a>
                         <span class="-skew-x-24 absolute bg-pink-800 h-full left-0 top-0 transform w-full opacity-0"></span>
                     </li>
                 </ul>
@@ -90,49 +96,65 @@
     </div>
     <section class="future">
         <div class="container mx-auto w-full px-4 pt-6">
-            <section class="pt-20 pb-48">
-                <div class="container mx-auto px-4">
-                    <div class="flex flex-wrap justify-center text-center mb-24">
-                        <div class="w-full lg:w-6/12 px-4">
-                            <h2 class="text-4xl text-gray-900">Future of Sankpal</h2>
-                            <p class="text-left text-1xl pt-5 text-gray-600">We will be very soon placing ourselves in the market as an ingenious space creator adapting to sustainable methods and creating space oasis like no other.</p>
-                        </div>
-                    </div>
-                    <div class="flex flex-wrap">
-                        <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-                            <div class="px-6"><img alt="..." src="assets/images/it-park.jpg" class="shadow-lg  max-w-full mx-auto" style="max-width:230px">
-                                <div class="pt-6 text-center">
-                                    <h5 class="text-xl">IT Parks</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-                            <div class="px-6"><img alt="..." src="assets/images/restaurants.jpg" class="shadow-lg  max-w-full mx-auto" style="max-width:230px">
-                                <div class="pt-6 text-center">
-                                    <h5 class="text-xl">Restaurants</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-                            <div class="px-6"><img alt="..." src="assets/images/Health-and-care.jpg" class="shadow-lg  max-w-full mx-auto" style="max-width:230px">
-                                <div class="pt-6 text-center">
-                                    <h5 class="text-xl">Health and care</h5>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="w-full md:w-6/12 lg:w-3/12 lg:mb-0 mb-12 px-4">
-                            <div class="px-6"><img alt="..." src="assets/images/retail.jpg" class="shadow-lg  max-w-full mx-auto" style="max-width:230px">
-                                <div class="pt-6 text-center">
-                                    <h5 class="text-xl ">Retail</h5>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        </div>
-        </section>
+            <div class="text-gray-500 mb-3">We keep the customers at the heart of everything we do. Our past experience as architects and civil engineers 
+                gives us a better understanding as to what the customer desires in terms of luxury and comfort. </div>
 
-
+                <div class="tab_blk">
+					<div class="tab_title_blk">
+						<ul class="tab_title_inner_blk list-inline" >
+							<li class="active">
+                                <div class="imgBlk">
+                                    <img src="assets/images/001.png" alt="">
+                                </div>
+                                <div class="py-3">ARCHITECTURAL PROJECTS</div>
+                                <div class=""><a="inline-block uppercase btn px-4 py-2 bg-black text-white ">more ></a></div>
+							</li>
+							<li>
+                                <div class="imgBlk">
+                                    <img src="assets/images/002.png" alt="">
+                                </div>
+                                <div class="py-3">ARCHITECTURAL PROJECTS</div>
+                                <div class="">< class="inline-block uppercase btn px-4 py-2 bg-black text-white ">more ></a></div>
+							</li>
+							<li>
+                                <div class="imgBlk">
+                                    <img src="assets/images/003.png" alt="">
+                                </div>
+                                <div class="py-3">ARCHITECTURAL PROJECTS</div>
+                                <div class="">< class="inline-block uppercase btn px-4 py-2 bg-black text-white ">more ></a></div>
+							</li>
+						</ul>
+					</div>
+					<div class="tab_cont_blk">
+						<div class="tab_cont_inner_blk">
+							<div class="tab_cont_li active">Cycle1Work initiative I have ignited a movement for adopting cycling as a smart choice for commuting.Cycle1Work initiative I have ignited a movement for adopting cycling as a smart choice for commuting.Cycle1Work initiative I have ignited a movement for adopting cycling as a smart choice for commuting.Cycle1Work initiative I have ignited a movement for adopting cycling as a smart choice for commuting.Cycle1Work initiative I have ignited a movement for adopting cycling as a smart choice for commuting.Cycle1Work initiative I have ignited a movement for adopting cycling as a smart choice for commuting.Cycle1Work initiative I have ignited a movement for adopting cycling as a smart choice for commuting.Cycle1Work initiative I have ignited a movement for adopting cycling as a smart choice for commuting.</div>
+							<div class="tab_cont_li ">Cycle2Work initiative I have ignited a movement for adopting cycling as a smart choice for commuting.Cycle2Work initiative I have ignited a movement for adopting cycling as a smart choice for commuting.Cycle2Work initiative I have ignited a movement for adopting cycling as a smart choice for commuting.Cycle2Work initiative I have ignited a movement for adopting cycling as a smart choice for commuting.Cycle2Work initiative I have ignited a movement for adopting cycling as a smart choice for commuting.Cycle2Work initiative I have ignited a movement for adopting cycling as a smart choice for commuting.Cycle2Work initiative I have ignited a movement for adopting cycling as a smart choice for commuting.Cycle2Work initiative I have ignited a movement for adopting cycling as a smart choice for commuting.Cycle2Work initiative I have ignited a movement for adopting cycling as a smart choice for commuting.Cycle2Work initiative I have ignited a movement for adopting cycling as a smart choice for commuting.</div>
+							<div class="tab_cont_li ">Cycle2Work initiative I have ignited a movement for adopting cycling as a smart choice for commuting.Cycle2Work initiative I have ignited a movement for adopting cycling as a smart choice for commuting.Cycle2Work initiative I have ignited a movement for adopting cycling as a smart choice for commuting.Cycle2Work initiative I have ignited a movement for adopting cycling as a smart choice for commuting.Cycle2Work initiative I have ignited a movement for adopting cycling as a smart choice for commuting.Cycle2Work initiative I have ignited a movement for adopting cycling as a smart choice for commuting.Cycle2Work initiative I have ignited a movement for adopting cycling as a smart choice for commuting.Cycle2Work initiative I have ignited a movement for adopting cycling as a smart choice for commuting.Cycle2Work initiative I have ignited a movement for adopting cycling as a smart choice for commuting.Cycle2Work initiative I have ignited a movement for adopting cycling as a smart choice for commuting.</div>
+							
+						</div>
+					</div>
+				</div>
+    <a href='assets/images/About-second-footerbanner.jpg' class='fresco' data-fresco-group='example' data-fresco-group-options="ui: 'inside'" data-fresco-caption="Frans Hals, Banquet of the Officers of the St George Civic Guard, 1627">
+        <img src='assets/images/About-second-footerbanner.jpg' alt=''/>
+    </a>
+    <a href='assets/images/About-second-footerbanner.jpg' class='fresco' data-fresco-group='example' data-fresco-caption="Frans Hals, Banquet of the Officers of the St George Civic Guard, 1627">
+        <img src='assets/images/About-second-footerbanner.jpg' alt=''/>
+    </a>
+    <a href='assets/images/About-second-footerbanner.jpg' class='fresco' data-fresco-group='example' data-fresco-caption="Frans Hals, Banquet of the Officers of the St George Civic Guard, 1627">
+        <img src='assets/images/About-second-footerbanner.jpg' alt=''/>
+    </a>
+    <a href='assets/images/About-second-footerbanner.jpg' class='fresco' data-fresco-group='example' data-fresco-caption="Frans Hals, Banquet of the Officers of the St George Civic Guard, 1627">
+        <img src='assets/images/About-second-footerbanner.jpg' alt=''/>
+    </a>
+    <a href='assets/images/About-second-footerbanner.jpg' class='fresco' data-fresco-group='example' data-fresco-caption="Frans Hals, Banquet of the Officers of the St George Civic Guard, 1627">
+        <img src='assets/images/About-second-footerbanner.jpg' alt=''/>
+    </a>
+    <a href='assets/images/About-second-footerbanner.jpg' class='fresco' data-fresco-group='example' data-fresco-caption="Frans Hals, Banquet of the Officers of the St George Civic Guard, 1627">
+        <img src='assets/images/About-second-footerbanner.jpg' alt=''/>
+    </a>
+    <a href='assets/images/dhrutii-sankpal-vice-chairman-about.jpg' class='fresco' data-fresco-group='example' data-fresco-caption="Sir Joshua Reynolds, The Countess of Dartmouth, 1757">
+        <img src='assets/images/dhrutii-sankpal-vice-chairman-about.jpg' alt=''/>
+    </a>
         </div>
     </section>
 
@@ -143,12 +165,7 @@
                 215 Atrium Building, A-705, Andheri-Kurla Road, <br>Andheri East, Mumbai, Maharashtra 400093 <br>T: 022 4967 0913 /14 /15 /16 | E: reception@sankpalglobal.com
             </div>
             <div class="flex items-center">
-                <div class="social-1 px-3"><img src="assets/images/fb.png" alt=""></div>
-                <div class="social-1 px-3"><img src="assets/images/twt.png" alt=""></div>
-                <div class="font-bold text-3xl px-2">2020</div>
-                <div class="footLogo pl-3">
-                    <img src="assets/images/footlogo.png" alt="" class="">
-                </div>
+                <div class="px-2">&copy; Designed by PaperPixel 2020</div>
             </div>
         </div>
     </footer>

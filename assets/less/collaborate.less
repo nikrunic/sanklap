@@ -1,0 +1,89 @@
+.coll{
+    .collSec{
+        @media(max-width:767px){
+            flex-direction: column;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .collImg{
+            width: 300px;
+            height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            @media(max-width:767px){
+                width: 100%;
+                height: auto;
+            }
+            img{
+                height: 100%;
+                @media(max-width:767px){
+                    height: auto;
+                }
+            }
+        }
+        .collText{
+            width: calc(100% - 300px);
+            @media(max-width:767px){
+                width: 100%;
+                margin-top: 20px;
+                padding-left: 0;
+            }
+        }
+    }
+    .sec-2{
+        .founderDetails{
+            @media (max-width:1024px) {
+                flex-direction: column;
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            .name{
+                color: #130d63;
+                margin-bottom: 15px;
+                font-weight: 600;
+            }
+        }
+    }
+    .sec-3 {
+        
+        @media (min-width:1024px) {
+            margin-top: -3rem;
+        }
+        @media (max-width:1024px) {
+            padding: 0;
+        }
+        .sec-3-Img_blk {
+
+            overflow: hidden;
+
+            @media (min-width:1024px) {
+                position: absolute;
+                display: block;
+                height: 100%;
+                width: 60%;
+                left: -10%;
+                top: 0;
+                --transform-skew-x: -12deg;
+                transform: skewX(var(--transform-skew-x));
+            }
+
+            .sec-3-Img {
+                @media (min-width:1024px) {
+                    top: 0;
+                    right: -16%;
+                    --transform-skew-x: 12deg;
+                    transform: skewX(var(--transform-skew-x));
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                }
+                padding: 8rem 0;
+                background-image: url(../images/bg2.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+        }
+    }
+}

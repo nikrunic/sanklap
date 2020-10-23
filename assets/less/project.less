@@ -6,8 +6,14 @@
     display: block;
 }
 
-.tab_title_inner_blk li.active {
-    // background: #bdbaba;
+.tab_title_inner_blk{
+    margin-left: -15px;
+    margin-right: -15px;
+    li {
+        &.active{
+
+        }
+    }
 }
 
 .tab_cont_blk {
@@ -25,12 +31,21 @@
                 width: 33.33%;
                 padding-left: 15px;
                 padding-right: 15px;
+                
+                @media (max-width:767px) {
+                    font-size: 12px;
+                }
                 .imgBlk{
 
                 }
                 .more{
                     span{
                         cursor: pointer;
+                        @media (max-width:767px) {
+                            padding: 0;
+                            background-color: transparent;
+                            color: blue;
+                        }
                     }
                 }
 
@@ -54,6 +69,12 @@
         padding: 15px;
         flex-direction: column;
         display: flex;
+        @media (max-width:991px) {
+            width: 33.33%;
+        }
+        @media (max-width:991px) {
+            width: 50%;
+        }
         .gallary{
             width: 100%;
         }

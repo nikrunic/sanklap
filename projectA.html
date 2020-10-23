@@ -43,54 +43,62 @@
 
 <body>
     <!--/*<header>*/-->
-    <header class="bg-gray-200 relative">
-        <span class="absolute bg-white h-full right-0 top-0 w-1/2"></span>
-        <div class="container px-4 items-center flex justify-between mx-auto w-full relative z-1">
-            <span class="-skew-x-24 absolute bg-white h-full left-0 top-0 transform w-full"></span>
-            <div class="logo relative py-1 px-4 z-1">
-                <a href="index.html"> <img src="assets/images/logo.png" class="lg:h-12 h-8 relative z-1" alt=""></a>
+  
+        <header class="bg-gray-200 relative">
+            <span class="absolute bg-white h-full right-0 top-0 w-1/2"></span>
+            <div class="container px-4 items-center flex justify-between mx-auto w-full relative z-1">
+                <span class="-skew-x-24 absolute bg-white h-full left-0 top-0 transform w-full"></span>
+                <div class="logo relative py-1 px-4 z-1">
+                    <a href="index.html"><img src="assets/images/logo.png" class="lg:h-12 h-8 relative z-1" alt="Logo"></a>
+                </div>
+                <div class="nav shadow-2xl transition-all duration-200 md:relative fixed md:w-auto top-0 left-0 w-64 z-1 md:h-auto h-full md:bg-transparent bg-white">
+                    <ul class="flex md:flex-row flex-col">
+                        <li class=" relative">
+                            <a href="index.html" class="flex lg:px-6 px-4 lg:py-5 py-4 relative hover:text-white z-1 border-b border-solid border-gray-200 md:border-0">Home</a>
+                            <span class="-skew-x-24 md:block hidden absolute bg-pink-800 h-full left-0 top-0 transform w-full opacity-0"></span>
+                        </li>
+                        <li class="relative">
+                            <a href="aboutus.html" class="flex lg:px-6 px-4 lg:py-5 py-4 relative hover:text-white z-1 border-b border-solid border-gray-200 md:border-0">About
+                                    Us</a>
+                            <span class="-skew-x-24 absolute bg-pink-800 h-full left-0 top-0 transform w-full opacity-0"></span>
+                        </li>
+                        <li class="active relative">
+                            <a href="#" class="flex lg:px-6 px-4 lg:py-5 py-4 relative hover:text-white z-1 border-b border-solid border-gray-200 md:border-0 sub">Projects</a>
+                            <span class="-skew-x-24 absolute bg-pink-800 h-full left-0 top-0 transform w-full opacity-0"></span>
+                            <ul class="sub-menu">
+                                <li><a href="projectA.html">Architectural projects</a></li>
+                                <li><a href="">Information Technology</a></li>
+                                <li><a href="">Cloud Kitchen</a></li>
+                            </ul>
+                            <span class="-skew-x-24 absolute bg-pink-800 h-full left-0 top-0 transform w-full opacity-0"></span>
+                        </li>
+                        <li class="relative">
+                            <a href="collaborate.html" class="flex lg:px-6 px-4 lg:py-5 py-4 relative hover:text-white z-1 border-b border-solid border-gray-200 md:border-0">Collaborate</a>
+                            <span class="-skew-x-24 absolute bg-pink-800 h-full left-0 top-0 transform w-full opacity-0"></span>
+                        </li>
+                        <li class="relative">
+                            <a href="future.html" class="flex lg:px-6 px-4 lg:py-5 py-4 relative hover:text-white z-1 border-b border-solid border-gray-200 md:border-0">Future</a>
+                            <span class="-skew-x-24 absolute bg-pink-800 h-full left-0 top-0 transform w-full opacity-0"></span>
+                        </li>
+                        <li class="relative">
+                            <a href="contact.html" class="flex lg:px-6 px-4 lg:py-5 py-4 relative hover:text-white z-1 border-b border-solid border-gray-200 md:border-0">Contact
+                                    Us</a>
+                            <span class="-skew-x-24 absolute bg-pink-800 h-full left-0 top-0 transform w-full opacity-0"></span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex flex-col hamburgar w-8 z-1 cursor-pointer md:hidden">
+                    <span class="bg-black h-1 rounded-l w-full"></span>
+                    <span class="bg-black h-1 my-1 rounded-l w-full"></span>
+                    <span class="bg-black h-1 rounded-l w-full"></span>
+                </div>
             </div>
-            <div class="nav shadow-2xl transition-all duration-200 md:relative fixed md:w-auto top-0 left-0 w-64 z-1 md:h-auto h-full md:bg-transparent bg-white">
-                <ul class="flex md:flex-row flex-col">
-                    <li class=" relative">
-                        <a href="" class="flex lg:px-6 px-4 lg:py-5 py-4 relative hover:text-white z-1 border-b border-solid border-gray-200 md:border-0">Home</a>
-                        <span class="-skew-x-24 md:block hidden absolute bg-pink-800 h-full left-0 top-0 transform w-full opacity-0"></span>
-                    </li>
-                    <li class="relative">
-                        <a href="" class="flex lg:px-6 px-4 lg:py-5 py-4 relative hover:text-white z-1 border-b border-solid border-gray-200 md:border-0">About Us</a>
-                        <span class="-skew-x-24 absolute bg-pink-800 h-full left-0 top-0 transform w-full opacity-0"></span>
-                    </li>
-                    <li class="active relative">
-                        <a href="" class="flex lg:px-6 px-4 lg:py-5 py-4 relative hover:text-white z-1 border-b border-solid border-gray-200 md:border-0">Projects</a>
-                        <span class="-skew-x-24 absolute bg-pink-800 h-full left-0 top-0 transform w-full opacity-0"></span>
-                    </li>
-                    <li class="relative">
-                        <a href="" class="flex lg:px-6 px-4 lg:py-5 py-4 relative hover:text-white z-1 border-b border-solid border-gray-200 md:border-0">Collaborate</a>
-                        <span class="-skew-x-24 absolute bg-pink-800 h-full left-0 top-0 transform w-full opacity-0"></span>
-                    </li>
-                    <li class="relative">
-                        <a href="future.html" class="flex lg:px-6 px-4 lg:py-5 py-4 relative hover:text-white z-1 border-b border-solid border-gray-200 md:border-0">Future</a>
-                        <span class="-skew-x-24 absolute bg-pink-800 h-full left-0 top-0 transform w-full opacity-0"></span>
-                    </li>
-                    <li class="relative">
-                        <a href="" class="flex lg:px-6 px-4 lg:py-5 py-4 relative hover:text-white z-1 border-b border-solid border-gray-200 md:border-0">Contact Us</a>
-                        <span class="-skew-x-24 absolute bg-pink-800 h-full left-0 top-0 transform w-full opacity-0"></span>
-                    </li>
-                </ul>
-            </div>
-            <div class="flex flex-col hamburgar w-8 z-1 cursor-pointer md:hidden">
-                <span class="bg-black h-1 rounded-l w-full"></span>
-                <span class="bg-black h-1 my-1 rounded-l w-full"></span>
-                <span class="bg-black h-1 rounded-l w-full"></span>
-            </div>
-        </div>
-    </header>
+        </header>
     <!--/*</header>*/-->
     <div class="w-full bg-cover bg-center" style="height:16rem; background-image: url(assets/images/bg-header-cloud-kitchen.jpg);">
         <div class="flex items-center justify-center h-full w-full bg-gray-900 bg-opacity-50">
             <div class="text-center">
                 <h1 class="text-white text-2xl font-semibold uppercase md:text-3xl">Architectural project</h1>
-
             </div>
         </div>
     </div>
@@ -105,7 +113,7 @@
                             <div class="imgBlk">
                                 <img src="assets/images/001.png" alt="">
                             </div>
-                            <div class="py-3">ARCHITECTURAL PROJECTS</div>
+                            <div class="py-3">Architectural Projects</div>
                             <div class="more"><span class="inline-block uppercase btn px-4 py-2 bg-black text-white ">more ></span></div>
                         </li>
                         <li>

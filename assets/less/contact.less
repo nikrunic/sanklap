@@ -1,0 +1,48 @@
+.contactSec{
+    .sec-1{
+        #map{
+            height: 400px;
+        }
+    }
+   
+    .sec-2 {
+        
+        @media (min-width:1023px) {
+            margin-top: -3rem;
+        }
+        @media (max-width:1023px) {
+            padding: 0;
+        }
+        .sec-2-Img_blk {
+
+            overflow: hidden;
+
+            @media (min-width:1023px) {
+                position: absolute;
+                display: block;
+                height: 100%;
+                width: 60%;
+                left: -10%;
+                top: 0;
+                --transform-skew-x: -12deg;
+                transform: skewX(var(--transform-skew-x));
+            }
+
+            .sec-2-Img {
+                @media (min-width:1023px) {
+                    top: 0;
+                    right: -16%;
+                    --transform-skew-x: 12deg;
+                    transform: skewX(var(--transform-skew-x));
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                }
+                padding: 8rem 0;
+                background-image: url(../images/bg2.jpg);
+                background-position: center;
+                background-size: cover;
+            }
+        }
+    }
+}

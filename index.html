@@ -41,9 +41,9 @@
 <body>
     <!--/*<header>*/-->
     <header class="bg-gray-200 relative">
-        <span class="absolute bg-white h-full right-0 top-0 w-1/2"></span>
+        <span class="absolute bg-white h-full right-0 top-0 w-1/2 md:block hidden"></span>
         <div class="container px-4 items-center flex justify-between mx-auto w-full relative z-1">
-            <span class="-skew-x-24 absolute bg-white h-full left-0 top-0 transform w-full"></span>
+            <span class="-skew-x-24 absolute bg-white h-full left-0 top-0 transform w-full  md:block hidden"></span>
             <div class="logo relative py-1 px-4 z-1">
                 <a href="index.html"><img src="assets/images/logo.png" class="lg:h-12 h-8 relative z-1" alt="Logo"></a>
             </div>
@@ -276,8 +276,10 @@
         </article>
         <article class="sec-7 relative overflow-hidden -mt-6">
             <div class="w-full">
-                <!-- <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d120674.95766968168!2d72.92279359849306!3d19.059673451195017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1603222329849!5m2!1sen!2sin" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> -->
-                <div id="map"></div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3769.8514307335345!2d72.86311331421328!3d19.11417255574013!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c83a471b7b55%3A0x9f7f3bb43d4799f4!2sBuilding%2C%20A%2C%20215%20Atrium%2C%20Andheri%20-%20Kurla%20Rd%2C%20Hanuman%20Nagar%2C%20Andheri%20East%2C%20Mumbai%2C%20Maharashtra%20400059!5e0!3m2!1sen!2sin!4v1603516024738!5m2!1sen!2sin"
+                    width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+
+                <!--<div id="map"></div>-->
             </div>
         </article>
     </section>
@@ -294,6 +296,8 @@
         </div>
     </footer>
     <!--/*<footer>*/-->
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=initMap" async defer></script>
     <script src="assets/js/slick.js "></script>
     <script src="assets/js/script.js "></script>
 </body>

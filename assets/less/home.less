@@ -1,5 +1,30 @@
 .home {
     .bannerSlider {
+        .slick-slide{overflow: hidden;}
+        &.slick-dotted {
+            margin-bottom: 0 !important;
+            .slick-dots {
+                bottom: 40%;
+                right: 7%;
+                width: auto;
+                display: flex;
+                flex-direction: column;
+                background: #ffffffa6;
+                li{
+                    height: 26px;
+                    a{
+                        display: block;
+                        line-height: 1.8;
+                    }
+                    &.slick-active{
+                        color: #943645;
+                    }
+
+                }
+            }
+        }
+        
+        // .bannerSlider.slick-dotted 
         .bannerSliderImg {
             max-height: calc(100vh - 80px);
             overflow: hidden;
@@ -8,11 +33,13 @@
         .sliderContSection {
             bottom: 0px;
             width: 645px;
+            height: 280px;
 
             @media (max-width:767px) {
                 width: 100%;
+                height: auto;
             }
-
+            
             &:after {
                 content: '';
                 position: absolute;
